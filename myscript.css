@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,200;0,300;0,400;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+
+
+
+
+body{
+    height:100vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-image: "images.jpg";
+    background:linear-gradient(to bottom,#68EACC 0%,#497BE8 100%);
+    color:white;
+    font-family: Arial, Helvetica;
+    
+}
+#add{
+    background-color: red;
+    border:0;
+    color:white;
+    padding: 10px 10px;
+    padding-right: 40px;
+    cursor:pointer;
+    margin-top:35px;
+}
+
+#wrapper{
+    max-width: 450px;
+    background-color: #000365;
+    width:100%;
+    margin:120px auto;
+    padding:25px;
+    border-radius: 25px;
+}
+.wrapper .h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.wrapper .inputField{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin:20px 0;
+}
+.inputField input{
+    width:70%;
+    height:100%;
+    border:1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+
+.inputField button{
+    width:60px;
+    height:100%;
+    border:none;
+    outline:none;
+    background: #8E49E8;
+    COLOR:white;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.inputField button.active{
+    opacity:1;
+    pointer-events: auto;
+}
+.wrapper .todolist{
+   max-height: 250px;
+   overflow-y: auto;
+}
+
+.todolist li{
+    list-style: none;
+    height:34px;
+    line-height: 35px;
+    position:relative;
+    background-color: #f2f2f2;
+    color: BLACK;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor:default;
+    overflow: hidden;
+    
+}
+.todolist li span{
+    position: absolute;
+    right:0px;
+    color:white;
+    width:45px;
+    text-align: center;
+    background-color: #e74c3c;
+    border-radius:  0 3px 3px 0;
+    cursor:pointer;
+    transition:all 0.3sec ease;
+}
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 25px;
+    align-items: center;
+}
+.footer button{
+    width:110px;
+    height:100%;
+    border:none;
+    outline:none;
+    background: white;
+    COLOR:black;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 3px 10px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.footer button.active{
+    opacity:1;
+    pointer-events: auto;
+}
